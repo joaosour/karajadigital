@@ -1,0 +1,28 @@
+@@@@ MYSQL @@@@
+
+# Para trabalhar localmente com mysql sem ter conflitos
+$ ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'admin'
+
+# 'root': usuário que irá trabalhar no backend; 'admin': senha do banco
+
+@@@@ VSCODE (NODE) @@@@
+
+#Criar o projeto node na pasta API
+$ npm init -y
+
+#Bibliotecas utilizadas
+
+express - construção api
+nodemon - compilar em tempo real sempre que salvar
+mysql - banco
+cors - para gerenciar conflitos rodano localmente
+
+$ yarn add express nodemon mysql cors
+
+# No arquivo "package.json" retirar "test" do bloco do "scripts {}" e inserir dentro "start": "nodemon index.js"
+
+Após isso criar o arquivo index.js que agora será atualiado em tempo real.
+
+# Para permitir a importação das bibliotecas e arquivos: inserir "type": "module" no primeiro bloco do "package.json"
+
+A partir daí já é possível iniciar o desenvolvimento da API
