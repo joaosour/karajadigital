@@ -6,3 +6,6 @@
 
 # Pasta node_modules
 node_modules/
+
+/ALTER USER.sql
+/Comandos Projeto.txt
