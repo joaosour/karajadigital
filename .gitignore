@@ -7,5 +7,5 @@
 # Pasta node_modules
 node_modules/
 
-*.sql
-*.txt  
+AlterUser.sql
+comandos.txt
