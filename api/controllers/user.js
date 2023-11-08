@@ -4,7 +4,7 @@ export const getUsers = (_, res) => {
     const q = "SELECT * FROM usuario";
 
     db.query(q, (err, data) => {
-        if (err) return res.json(err);
+        if (err) return res.status(500).json(err);
 
         return res.status(200).json(data);
     });
@@ -76,7 +76,6 @@ export const updateUser = (req, res) => {
         }
     });
 };
-
 
 export const deleteUser = (req, res) => {
     const checkUserExist = "SELECT * FROM usuario WHERE `id` = ?";

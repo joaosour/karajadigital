@@ -13,4 +13,4 @@ db.connect((err) => {
       return;
     }
     console.log(`✅ (2/2) Banco de dados ativo...: >> ${db.config.database}`);
-  });
+  }); 

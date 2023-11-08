@@ -9,9 +9,9 @@ app.use(express.json())
 
 app.use(cors())
 
-app.use("/", usersRoutes)
+app.use("/", usersRoutes, loginRoutes)
 
-app.use("/", loginRoutes)
+// app.use("/", loginRoutes)
 
 const port = 8801
 
