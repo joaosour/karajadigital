@@ -25,9 +25,41 @@
 - Após o download, instale o  **Node JS** de forma padrão (next, next...).
 
 ### MySQL
+#### 1. Criando a conexão
 - Após instalação do **MySQL Community (installer)**, selecione os ambientes de **SQL Server** e **SQL Workbench**, clique na seta apontada para direita e após isso siga o processo de instalação padrão (next, next...)
 
 
 - Concluída a instalação dos ambientes SQL, abra o **MySQL Workbench**:
-- - Registre seu usuário e senha
+- - Registre o banco **karajadigital** e a senha **russo~~cmt**, o mesmo configurado no arquivo **db.js** da pasta **api**.
 - - Crie uma nova conexão em **DataBase** > **Connect to DataBase** > **Ok**
+- - Obs: Não há necessidade de configuração de portas no projeto.
+
+#### 2. Importando o banco de dados
+- Após a crição da conexão, acesse o menu > **Server** > **Import Data**
+- Selecione a opção **Import Self-Containerd File** e nos **...** (três pontos) selecione o arquivo **karajadigital.sql** localizado na raiz do repositório .git.
+- Em **Default Target Schema** clique em **New** e digite **karajadigital**
+- Selecione o schema em **Select DataBase Objects...**
+- Clique em **import**
+- - *Caso o schema não aparece de imediato na aba lateral esquerda do **SQL Workbench**, reinicie o ambiente **Workbench** (feche e abra novamente).
+
+## VSCODE
+ Após abrir a pasta do projeto no visual studio code, acesse a pasta **api**  e execute a instalação de todas as dependências do projeto usando:
+```
+yarn install  
+```
+ou
+```
+npm install  
+```
+- Refaça o mesmo (em um novo terminal) na pasta **frontend**.
+
+Nesse momento haverá dois terminar abertos, o terminal com a pasta **api** aberta e outro terminal com a pasta **frontend** aberta.
+
+Para iniciar tanto a api quanto o frontend, cada um em sua respectiva pasta, utilize:
+```
+yarn start
+```
+ou
+```
+npm start
+```
