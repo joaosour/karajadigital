@@ -2,7 +2,7 @@
 ## Olá! Bem vindo ao projeto Karajá Digital!
 
 ### 📕 Descrição
-#### Karajá Digital um desenvolvimento web com objetivo de estruturar uma biblioteca digital com gerenciamento de livros e de usuários responsáveis pelo cadastramento destes livros.
+#### Karajá Digital é um projeto de desenvolvimento web com objetivo de estruturar uma biblioteca digital com gerenciamento de livros e de usuários responsáveis pelo cadastramento destes livros.
 
 ![Home-KarajaDigial](https://onedrive.live.com/embed?resid=A354D07AC62B3483%21534183&authkey=%21AMkE0TtvdxD0Bow&width=5120&height=5376)
 
