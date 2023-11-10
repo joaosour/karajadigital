@@ -15,8 +15,8 @@
 
 - [Node JS - LTS](https://nodejs.org/en/download) para funcionamento do backend e da API.
 - [My SQL Community (installer)](https://dev.mysql.com/downloads/installer/) para gerenciar as instalações do ambiente de banco de dados SQL:
-- MySQL Server
-- - MySQL Workbench
+    - MySQL Server
+    - MySQL Workbench
 - [VS Code](https://code.visualstudio.com/download) (ou outra IDE) para execução da API e do frontend.
 
 ## 🔧 Etapas de instalação
