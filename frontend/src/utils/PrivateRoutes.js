@@ -1,28 +1,25 @@
+// PrivateRoutes.js
 import { Outlet, Navigate } from "react-router-dom";
-import axios from "axios";
 import { useEffect, useState } from "react";
+import axios from "axios"
 
-export default function PrivateRoutes() {
-  const auth = {
-    usuario: "JOAO",
-    senha: "1234",
-  };
-
-  const [isAuthenticated, setIsAuthenticated] = useState(null); // Defina como nulo inicialmente
+export default function PrivateRoutes({ authData }) {
+  const [isAuthenticated, setIsAuthenticated] = useState(null);
 
   useEffect(() => {
     const checkAuthentication = async () => {
       try {
-        const response = await axios.get("http://localhost:8801/users");
-        // console.log('Resposta da API', response.data);
+        const response = await axios.get("http://localhost:8801/users"); 
+        const { usuario, senha } = authData;
 
-        const isAdmin = response.data.some(
+        const isAuthenticated = response.data.some(
           (user) =>
-            user.USUARIO === auth.usuario &&
-            user.SENHA === auth.senha &&
+            user.USUARIO === usuario &&
+            user.SENHA === senha &&
             user.USUARIO_ADMIN === 1
         );
-        setIsAuthenticated(isAdmin);
+
+        setIsAuthenticated(isAuthenticated);
       } catch (error) {
         console.error(error);
         setIsAuthenticated(false);
@@ -30,11 +27,10 @@ export default function PrivateRoutes() {
     };
 
     checkAuthentication();
-  }, [auth.usuario, auth.senha]);
+  }, [authData.usuario, authData.senha]);
 
-  console.log(isAuthenticated)
   if (isAuthenticated === null) {
-    return console.log('Verificando autenticação...')
+    return <p>Verificando autenticação...</p>;
   } else if (isAuthenticated) {
     return <Outlet />;
   } else {

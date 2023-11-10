@@ -4,7 +4,7 @@ export default function Home() {
     return (
         <>
             <NavBar />
-            <h3>Página Home CARAAALHOO</h3>
+            <h3>Página Home DESGRAÇAAAAA!!!</h3>
         </>
     )
 }
