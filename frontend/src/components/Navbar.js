@@ -1,14 +1,15 @@
-export default function NavBar() {
+import styles from "./Navbar.css"
 
+export default function NavBar() {
   return(
-    <>
+    <div className={styles.bodys}>
       <ul>
-        <a href='/login'>Login</a>
-        <a href='/home'>Home</a>
-        <a href='/contact'>Contact</a>
-        <a href='/about'>About</a>
+        <a href='/home'>Biblioteca Digital</a>
+        <a href='/lista-bibliografica'> Lista bibliográfica</a>
+        <a href='/acervo-fotografico'> Acervo fotográfico</a>
+        <a href='/login'> Login</a>
       </ul>
-    </>
+    </div>
   ) 
 
 }
