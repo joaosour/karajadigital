@@ -8,12 +8,13 @@ import Login from './pages/Login';
 import PrivateRoutes from './utils/PrivateRoutes';
 import ListaBibliografica from './pages/ListaBibliografica';
 import AcervoFotografico from './pages/AcervoFotografico';
+import styles from './styles/global.module.css';
 
 function App() {
   const [authData, setAuthData] = useState({ usuario: "JOAO", senha: "1234" });
 
   return (
-    <div>
+    <div className={styles.body}>
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<Navbar />} />

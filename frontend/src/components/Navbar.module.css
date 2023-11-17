@@ -1,0 +1,25 @@
+.Background {
+    background-color: #020402;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.LinksContainer {
+    justify-content: space-between;
+    color: white;
+    display: flex;
+}
+
+.LinksText {
+    color: white;
+}
+
+.FontOffFocus {
+    color: white;
+    word-spacing: 2px;
+}
