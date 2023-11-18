@@ -19,8 +19,8 @@ function App() {
         <Routes>
           <Route path='/' element={<Navbar />} />
           <Route element={<PrivateRoutes authData={authData} setAuthData={setAuthData} />}>
-            <Route path='/home'  element={<Home />} />
           </Route>
+          <Route path='/home'  element={<Home />} />
           <Route path='/login' element={<Login setAuthData={setAuthData} />}/>
           <Route path='/lista-bibliografica' element={<ListaBibliografica />}/>
           <Route path='/acervo-fotografico' element={<AcervoFotografico />}/>
