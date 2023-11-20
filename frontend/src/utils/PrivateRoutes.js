@@ -34,6 +34,6 @@ export default function PrivateRoutes({ authData }) {
   } else if (isAuthenticated) {
     return <Outlet />;
   } else {
-    return <Navigate to="/login" />;
+    return <Navigate to="/home" />;
   }
 }

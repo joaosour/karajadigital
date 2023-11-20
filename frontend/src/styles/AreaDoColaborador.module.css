@@ -1,0 +1,164 @@
+.body {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.ContainerArea {
+    display: flex;
+    overflow: hidden;
+    margin-top: 20px;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    height: 450px;
+    /* background-color: blue; */
+}
+
+.ContainerLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 70%;
+    width: 100%;
+    border: solid 1px;
+    border-color: #020420;
+    border-radius: 20px;
+    padding: 30px;
+    /* background-color: green; */
+}
+
+divInput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #020402;
+    border-radius: 16px;
+    color: white;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    padding-left: 10px;
+    justify-content: flex-end;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    border: solid 1px;
+}
+
+divInput:hover {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px;
+    color:black;
+    width: 100%;
+    min-height: 50px;
+    height: 50px;
+    padding-left: 10px;
+    justify-content: flex-end;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 8px;
+    border: solid 1px;
+    transition: background-color 0.35s ease;
+
+}
+
+input {
+    background-color: #020402;
+    border-style: hidden;
+    border-radius: 15px;
+    padding: 0px 15px;
+    outline: none;
+    width: 85%;
+    height: 100%;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+input::placeholder {
+    text-transform: none;
+}
+
+input:hover {
+    color: #020402;
+    font-weight: 300;
+    font-size: 14px;
+    background-color: white;
+    padding-left: 0px 10px;
+    border-style: hidden;
+    border-radius: 15px;
+    padding-left: 15px;
+    outline: none;
+    transition: background-color 0.35s ease;
+}
+
+.inputIcon {
+    margin-right: 10px;
+}
+
+
+button:hover {
+    display: flex;
+    background-color: #076633;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: white;
+    outline: none;
+    transition: background-color 0.35s ease;
+}
+
+button:active {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: white;
+    border: 0.1px;
+}
+
+button {
+    display: flex;
+    background-color: #FFBF00;
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    color: white;
+    border: 0.1px;
+}
+
+h3 {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+h4 {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+h5 {
+    padding-bottom: 16px;
+    padding: 8px 10px 16px;
+    font-weight: 300;
+}
