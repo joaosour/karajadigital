@@ -19,6 +19,7 @@ function App() {
             <Route path='/acervo-fotografico' element={<AcervoFotografico />}/>
           </Route>
           <Route path='/home'  element={<Home />} />
+          <Route path='/home'  element={<Home />} />
           <Route path='/login' element={<Login setAuthData={setAuthData} />}/>
           <Route path='/lista-bibliografica' element={<ListaBibliografica />}/>
           <Route path='/login' element={<Login />}/>

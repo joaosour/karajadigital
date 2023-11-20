@@ -24,6 +24,7 @@
 }
 
 .LinksText {
+    font-size: 15px;
     color: white;
     margin-right: 20px;
     text-overflow: ellipsis;
