@@ -7,6 +7,8 @@ import PrivateRoutes from './utils/PrivateRoutes';
 import ListaBibliografica from './pages/ListaBibliografica';
 import AcervoFotografico from './pages/AcervoFotografico';
 import styles from './styles/global.module.css';
+import AreaDoColaborador from './pages/AreaDoColaborador';
+import { toast, ToastContainer } from 'react-toastify'
  
 function App() {
   const [authData, setAuthData] = useState({ usuario: "JOAO", senha: "1234" });
@@ -22,9 +24,11 @@ function App() {
           <Route path='/home'  element={<Home />} />
           <Route path='/login' element={<Login setAuthData={setAuthData} />}/>
           <Route path='/lista-bibliografica' element={<ListaBibliografica />}/>
+          <Route path='/area-do-colaborador' element={<AreaDoColaborador />}/>
           <Route path='/login' element={<Login />}/>
           <Route path='*' element={<Navigate to='/home'/>} />
         </Routes>
+        <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
       </BrowserRouter>
     </div>
   );

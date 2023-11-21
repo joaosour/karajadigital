@@ -33,7 +33,7 @@
     /* background-color: green; */
 }
 
-divInput {
+div-input {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,7 +50,7 @@ divInput {
     border: solid 1px;
 }
 
-divInput:hover {
+div-input:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,7 +69,7 @@ divInput:hover {
 
 }
 
-input {
+input-login {
     background-color: #020402;
     border-style: hidden;
     border-radius: 15px;
@@ -83,11 +83,11 @@ input {
     text-transform: uppercase;
 }
 
-input::placeholder {
+input-login::placeholder {
     text-transform: none;
 }
 
-input:hover {
+input-login:hover {
     color: #020402;
     font-weight: 300;
     font-size: 14px;

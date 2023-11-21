@@ -1,9 +1,10 @@
 import NavBar from "../components/Navbar";
-import styles from "./../styles/AreaDoColaborador.module.css"
+import styles from "./../styles/Login.module.css"
 import { FaUser, FaLock } from "react-icons/fa";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { toast } from 'react-toastify'
 
 export default function Login() {
 
@@ -17,15 +18,15 @@ export default function Login() {
 
             const isAuthenticated = response.data.some(
                 (user) =>
-                    user.USUARIO === usuario &&
-                    user.SENHA === senha &&
-                    user.USUARIO_ADMIN === 1
+                    user.usuario === usuario &&
+                    user.senha === senha &&
+                    user.usuario_admin === 1
             );
 
             if (isAuthenticated) {
                 navigate("/area-do-colaborador");
             } else {
-                alert("Login falhou. Verifique suas credenciais.");
+                toast.error("Credenciais inválidas.");
             }
         } catch (error) {
             console.error(error);
@@ -41,20 +42,20 @@ export default function Login() {
                 <h5 className={styles.InformationText}>Informe suas credenciais abaixo para acessar o painel administrativo</h5>
                 <div className={styles.ContainerLogin}>
                     <h4>Usuário</h4>
-                    <divInput className={styles.ContainerInput}>
+                    <div-input className={styles.ContainerInput}>
                         <FaUser className={styles.inputIcon} />
-                        <input
+                        <input-login
                             className={styles.InputUser}
                             type="text" name="usuario"
                             placeholder="Insira seu usuário"
                             value={usuario}
                             onChange={(e) => setUsuario(e.target.value)}
                         />
-                    </divInput>
+                    </div-input>
                     <h4>Senha</h4>
-                    <divInput className={styles.ContainerInput}>
+                    <div-input className={styles.ContainerInput}>
                         <FaLock className={styles.inputIcon} />
-                        <input
+                        <input-login
                             className={styles.InputUser}
                             style={{ textTransform: "none" }}
                             type="password"
@@ -63,7 +64,7 @@ export default function Login() {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
-                    </divInput>
+                    </div-input>
                     <button className={styles.ButtonLogin} onClick={handleLogin}>
                         <h3>ENTRAR</h3>
                     </button>

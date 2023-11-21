@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-buttonAdmin {
+button-admin {
     display: flex;
     background-color: #171717;
     width: 140px;
@@ -59,7 +59,7 @@ buttonAdmin {
     padding: 5px 5px;
 }
 
-buttonAdmin:hover {
+button-admin:hover {
     display: flex;
     background-color: #FFBF00;
     width: 140px;

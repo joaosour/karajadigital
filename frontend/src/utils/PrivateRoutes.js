@@ -14,9 +14,9 @@ export default function PrivateRoutes({ authData }) {
 
         const isAuthenticated = response.data.some(
           (user) =>
-            user.USUARIO === usuario &&
-            user.SENHA === senha &&
-            user.USUARIO_ADMIN === 1
+            user.usuario === usuario &&
+            user.senha === senha &&
+            user.usuario_admin === 1
         );
 
         setIsAuthenticated(isAuthenticated);

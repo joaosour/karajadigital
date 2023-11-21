@@ -14,9 +14,9 @@ export default function NavBar() {
         <a className={styles.LinksText} href='/lista-bibliografica'>Lista bibliográfica</a>
         <a className={styles.LinksText} href='/acervo-fotografico'>Acervo fotográfico</a>
       </div>
-      <buttonAdmin className={styles.ButtonAdmin}>
+      <button-admin>
         <a className={styles.TextAdmin} href="/login">Área do colaborador</a>
-      </buttonAdmin>
+      </button-admin>
     </div>
   );
 }
