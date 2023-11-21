@@ -11,7 +11,7 @@
     font-weight: 300;
     font-family: 'Poppins', sans-serif;
     background-color:white;
-    padding: 15px 30px;
+    padding: 15px 20%;
     flex-direction: column;
     overflow-x: hidden;
 };
