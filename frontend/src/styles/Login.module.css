@@ -33,7 +33,7 @@
     /* background-color: green; */
 }
 
-div-input {
+.ContainerInput {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -50,7 +50,7 @@ div-input {
     border: solid 1px;
 }
 
-div-input:hover {
+.ContainerInput:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -69,8 +69,9 @@ div-input:hover {
 
 }
 
-input-login {
-    background-color: #020402;
+.InputLogin {
+    /* background-color: #020402; */
+    background-color: transparent;
     border-style: hidden;
     border-radius: 15px;
     padding: 0px 15px;
@@ -83,15 +84,16 @@ input-login {
     text-transform: uppercase;
 }
 
-input-login::placeholder {
+.InputLogin::placeholder {
     text-transform: none;
 }
 
-input-login:hover {
+.InputLogin:hover {
     color: #020402;
     font-weight: 300;
     font-size: 14px;
-    background-color: white;
+    /* background-color: white; */
+    background-color: transparent;
     padding-left: 0px 10px;
     border-style: hidden;
     border-radius: 15px;
@@ -105,7 +107,7 @@ input-login:hover {
 }
 
 
-button:hover {
+.ButtonLogin:hover {
     display: flex;
     background-color: #076633;
     width: 100%;
@@ -119,7 +121,7 @@ button:hover {
     transition: background-color 0.35s ease;
 }
 
-button:active {
+.ButtonLogin:active {
     display: flex;
     background-color: black;
     width: 100%;
@@ -132,7 +134,7 @@ button:active {
     border: 0.1px;
 }
 
-button {
+.ButtonLogin {
     display: flex;
     background-color: #FFBF00;
     width: 100%;

@@ -22,7 +22,7 @@ export default function PrivateRoutes({ authData }) {
         setIsAuthenticated(isAuthenticated);
       } catch (error) {
         console.error(error);
-        setIsAuthenticated(false);
+        setIsAuthenticated(false); //original
       }
     };
 
@@ -30,7 +30,7 @@ export default function PrivateRoutes({ authData }) {
   }, [authData.usuario, authData.senha]);
 
   if (isAuthenticated === null) {
-    return <p>Verificando autenticação...</p>;
+    return <p>Verificando autenticação...</p>; //original
   } else if (isAuthenticated) {
     return <Outlet />;
   } else {

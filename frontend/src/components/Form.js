@@ -62,18 +62,19 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
     user.usuario.value = "";
     user.email.value = "";
     user.senha.value = "";
+    user.usuario_admin.value = "";
     
     setOnEdit(null);
     getUsers();
     };
 
     return(
-        <form className={styles.form} ref={ref} onSubmit={handleSubmit}>
-            <div className={styles.div}>
-                <label>Nome</label>
-                <input className={styles.input} name="nome" />
+        <div className={styles.FormContainer} ref={ref} onSubmit={handleSubmit}>
+            <div className={styles.InputContainer}>
+                <label className={styles.LabelInput}>Nome</label>
+                <input className={styles.InputText} name="nome" />
             </div>
-            <div className={styles.div}>
+            <div className={styles.InputContainer}>
                 <label>Usuário</label>
                 <input className={styles.input} name="usuario" type="usuario" />
             </div>
@@ -92,7 +93,7 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
             <div className={styles.div}>
                 <button type="submit">SALVAR</button>
             </div>
-        </form>
+        </div>
     );
 };
 

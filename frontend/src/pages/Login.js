@@ -27,6 +27,7 @@ export default function Login() {
                 navigate("/area-do-colaborador");
             } else {
                 toast.error("Credenciais inválidas.");
+                console.log(response.data)
             }
         } catch (error) {
             console.error(error);
@@ -42,21 +43,21 @@ export default function Login() {
                 <h5 className={styles.InformationText}>Informe suas credenciais abaixo para acessar o painel administrativo</h5>
                 <div className={styles.ContainerLogin}>
                     <h4>Usuário</h4>
-                    <div-input className={styles.ContainerInput}>
+                    <div className={styles.ContainerInput}>
                         <FaUser className={styles.inputIcon} />
-                        <input-login
-                            className={styles.InputUser}
+                        <input
+                            className={styles.InputLogin}
                             type="text" name="usuario"
                             placeholder="Insira seu usuário"
                             value={usuario}
                             onChange={(e) => setUsuario(e.target.value)}
                         />
-                    </div-input>
+                    </div>
                     <h4>Senha</h4>
-                    <div-input className={styles.ContainerInput}>
+                    <div className={styles.ContainerInput}>
                         <FaLock className={styles.inputIcon} />
-                        <input-login
-                            className={styles.InputUser}
+                        <input
+                            className={styles.InputLogin}
                             style={{ textTransform: "none" }}
                             type="password"
                             name="senha"
@@ -64,10 +65,10 @@ export default function Login() {
                             value={senha}
                             onChange={(e) => setSenha(e.target.value)}
                         />
-                    </div-input>
-                    <button className={styles.ButtonLogin} onClick={handleLogin}>
-                        <h3>ENTRAR</h3>
-                    </button>
+                    </div>
+                        <button className={styles.ButtonLogin} onClick={handleLogin}>
+                            <h3>ENTRAR</h3>
+                        </button>
                 </div>
             </div>
         </div>

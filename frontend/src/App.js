@@ -11,7 +11,7 @@ import AreaDoColaborador from './pages/AreaDoColaborador';
 import { toast, ToastContainer } from 'react-toastify'
  
 function App() {
-  const [authData, setAuthData] = useState({ usuario: "JOAO", senha: "1234" });
+  const [authData, setAuthData] = useState({ usuario:"JV", senha:"1" });
 
   return (
     <div className={styles.body}>
