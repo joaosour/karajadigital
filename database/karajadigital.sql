@@ -1,6 +1,4 @@
-CREATE DATABASE  IF NOT EXISTS `karajadigital` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `karajadigital`;
--- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: localhost    Database: karajadigital
 -- ------------------------------------------------------
@@ -49,14 +47,14 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `usuario` (
-  `ID` int NOT NULL AUTO_INCREMENT,
-  `NOME` varchar(245) NOT NULL,
-  `USUARIO` varchar(45) NOT NULL,
-  `SENHA` varchar(45) NOT NULL,
-  `EMAIL` varchar(245) NOT NULL,
-  `USUARIO_ADMIN` tinyint NOT NULL,
-  PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+  `id` int NOT NULL AUTO_INCREMENT,
+  `nome` varchar(245) NOT NULL,
+  `usuario` varchar(45) NOT NULL,
+  `senha` varchar(45) NOT NULL,
+  `email` varchar(245) NOT NULL,
+  `usuario_admin` tinyint NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,17 +63,9 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JOAO','1234','joao@gmail.com',1),(4,'LucasVictor','LUCAS','4321','lucas@gmail.com',0),(10,'Rennan Ufopa','RENNAN','4321','lucas@gmail.com',1),(11,'Rennan2','RENAN2','4321','renan@gmail.com',1);
+INSERT INTO `usuario` VALUES (1,'Joao Victorr','JV','1','joao@gmail.comv',1),(14,'Mariaa','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(16,'Rennan','RENANN','4321','renan@gmail.com',1);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping events for database 'karajadigital'
---
-
---
--- Dumping routines for database 'karajadigital'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -86,4 +76,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-10 10:31:13
+-- Dump completed on 2023-11-24 17:45:24
