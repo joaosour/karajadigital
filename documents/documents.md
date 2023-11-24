@@ -2,8 +2,8 @@
 ![PosmanLogo](<postman logo.png>)
 # Diagrama de componentes
 
-![Alt text](image.png)
+![!\[Alt text\](diagrama de componentes.png)](<diagrama de componntes.png>)
 
 # Modelo de dados
 
-![Alt text](image-2.png)
+![!\[Alt text\](image-2.png)](<modelo de dados.png>)
