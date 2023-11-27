@@ -1,47 +1,16 @@
+// Importe a biblioteca de estilos
+import styles from './Form.module.css';
+
+// ... (restante do código)
+
 import axios from "axios";
 import React, { useEffect, useRef } from "react";
-import styled from "styled-components";
 import { toast } from "react-toastify";
-
-const FormContainer = styled.form`
-    display: flex;
-    align-items: flex-end;
-    gap: 10px;
-    flex-wrap: wrap;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 5px #ccc;
-    border-radius: 5px;
-
-`;
-
-const InputArea = styled.div`
-    display: flex;
-    flex-direction: column;
-`;
-
-const Input = styled.input`
-    width: 120px;
-    padding: 0 10px;
-    border: 1px solid #bbb;
-    border-radius: 5px;
-    height: 40px;
-`;
-
-const Button = styled.button`
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 5px;
-    border: none;
-    background-color: #2c73d2;
-    color: white;
-    height: 42px;
-`;
-
-const Label = styled.label``;
 
 const Form = ({ getUsers, onEdit, setOnEdit }) => {
     const ref = useRef();
+
+    // ... (restante do código)
 
     useEffect(() => {
         if (onEdit) {
@@ -104,31 +73,31 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
     getUsers();
     };
 
-    return(
-        <FormContainer ref={ref} onSubmit={handleSubmit}>
-            <InputArea>
-                <Label>Nome</Label>
-                <Input name="nome" />
-            </InputArea>
-            <InputArea>
-                <Label>Usuário</Label>
-                <Input name="usuario" />
-            </InputArea>
-            <InputArea>
-                <Label>E-mail</Label>
-                <Input name="email" type="email" />
-            </InputArea>
-            <InputArea>
-                <Label>Senha</Label>
-                <Input name="senha" />
-            </InputArea>
-            <InputArea>
-                <Label>Admin</Label>
-                <Input name="usuario_admin" />
-            </InputArea>
+    return (
+        <form className={styles.formContainer} ref={ref} onSubmit={handleSubmit}>
+            <div className={styles.inputArea} style={{width: '25%'}}>
+                <label className={styles.label} htmlFor="nome">Nome</label>
+                <input className={styles.input} name="nome" id="nome"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '15%'}}>
+                <label className={styles.label} htmlFor="usuario">Usuário</label>
+                <input className={styles.input} name="usuario" id="usuario" />
+            </div>
+            <div className={styles.inputArea} style={{width: '25%'}}>
+                <label className={styles.label} htmlFor="email">E-mail</label>
+                <input className={styles.input} name="email" type="email" id="email" />
+            </div>
+            <div className={styles.inputArea} style={{width: '20%'}}>
+                <label className={styles.label} htmlFor="senha">Senha</label>
+                <input className={styles.input} name="senha" id="senha"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '15%'}}>
+                <label className={styles.label} htmlFor="usuario_admin">Admin</label>
+                <input className={styles.input} name="usuario_admin" id="usuario_admin" />
+            </div>
 
-            <Button type="submit">SALVAR</Button>
-        </FormContainer>
+            <button className={styles.button} type="submit">SALVAR</button>
+        </form>
     );
 };
 

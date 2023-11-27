@@ -1,46 +1,10 @@
 import React from "react";
-import styled from "styled-components";
 import axios from "axios";
+import styles from './Grid.module.css';
 import { FaTrash, FaEdit } from "react-icons/fa";
 import { toast } from "react-toastify";
 
-const Table = styled.table`
-    width: 100%;
-    background-color: #fff;
-    padding: 15px;
-    box-shadow: 0px 0px 5px #ccc;
-    border-radius: 5px;
-    /* max-width: 800px; */
-    margin: 20px auto;
-    word-break: break-all;
-`;
 
-export const Thread = styled.thead``;
-
-export const Tbody = styled.tbody``;
-
-export const Tr = styled.tr``;
-
-export const Th = styled.th`
-    text-align: start;
-    border-bottom: inset;
-    padding-bottom: 5px;
-
-    @media (max-width: 900px) {
-        ${(props) => props.onlyWeb && "display: none"}
-    }
-`;
-
-export const Td = styled.td`
-    padding-top: 15px;
-    text-align: ${(props) => (props.alignCenter ? "center" : "start")};
-    width: ${(props) => (props.width ? props.width : "auto")};
-
-    @media (max-width: 900px) {
-        ${(props) => props.onlyWeb && "display: none"}
-    }
-
-`;
 
 const Grid = ({ users, setUsers, setOnEdit}) => {
 
@@ -63,40 +27,39 @@ const Grid = ({ users, setUsers, setOnEdit}) => {
     }
 
     return (
-        <Table>
-            <Thread>
-                <Tr>
-                    <Th>Nome</Th>
-                    <Th>Usuário</Th>
-                    <Th>Email</Th>
-                    <Th>Senha</Th>
-                    <Th>Admin</Th>
-                    <Th>Data de cadastro</Th>
-                    <Th></Th>
-                    <Th></Th>
-                </Tr>
-            </Thread>
-            <Tbody>
-                {users.map((item, i) => (
-                    <Tr key={i}>
-                        <Td width="20%">{item.nome}</Td>
-                        <Td width="10%">{item.usuario}</Td>
-                        <Td width="25%">{item.email}</Td>
-                        <Td width="15%">{item.senha}</Td>
-                        <Td width="5%">{item.usuario_admin}</Td>
-                        <Td width="15%">{item.dtcadastro}</Td>
-                        <Td alignCenter width="5%">
-                            <FaEdit onClick={() => handleEdit(item)}/>
-                        </Td>
-                        <Td alignCenter width="5%">
-                            <FaTrash onClick={() => handleDelete(item.id)}/>
-                        </Td>
-
-                    </Tr>
-                ))}
-            </Tbody>
-        </Table>
-    );
+        <div className={styles.table}>
+          <div className={styles.thread}>
+            <div className={styles.tr}>
+              <div className={styles.th}>Nome</div>
+              <div className={styles.th}>Usuário</div>
+              <div className={styles.th}>Email</div>
+              <div className={styles.th}>Senha</div>
+              <div className={styles.th}>Admin</div>
+              <div className={styles.th}>Data de cadastro</div>
+              <div className={styles.th}></div>
+              <div className={styles.th}></div>
+            </div>
+          </div>
+          <div className={styles.tbody}>
+            {users.map((item, i) => (
+              <div key={i} className={styles.tr}>
+                <div className={`${styles.td} ${styles['width-20']}`}>{item.nome}</div>
+                <div className={`${styles.td} ${styles['width-10']}`}>{item.usuario}</div>
+                <div className={`${styles.td} ${styles['width-25']}`}>{item.email}</div>
+                <div className={`${styles.td} ${styles['width-15']}`}>{item.senha}</div>
+                <div className={`${styles.td} ${styles['width-5']}`}>{item.usuario_admin}</div>
+                <div className={`${styles.td} ${styles['width-15']}`}>{item.dtcadastro}</div>
+                <div className={`${styles.td} ${styles['width-5']}`}>
+                  <FaEdit onClick={() => handleEdit(item)} />
+                </div>
+                <div className={`${styles.td} ${styles['width-5']}`}>
+                  <FaTrash onClick={() => handleDelete(item.id)} />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      );
 };
 
 export default Grid;
