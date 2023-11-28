@@ -56,7 +56,7 @@ CREATE TABLE `usuario` (
   `email` varchar(245) NOT NULL,
   `usuario_admin` tinyint NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +65,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAa','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(19,'Renan','RENAN','renan123','renan@gmail.com',1),(20,'Maria','JV2','22','joao@gmail.blog',2),(22,'João Victor de Sousa Nascimento','JOAOV','russo~~cmt','joaovictorsousa45@gmail.com',1);
+INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAa','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOV','russo~~cmt','joaovictorsousa45@gmail.com',1),(25,'Tested','TESTEES','1','tetes@gs.com',1),(28,'Tested','TESTEESSSF','1','tetes@gs.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -78,4 +78,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-27 17:53:55
+-- Dump completed on 2023-11-28 18:05:29
