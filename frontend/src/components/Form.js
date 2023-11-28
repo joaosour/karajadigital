@@ -63,11 +63,11 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
         .catch(({ data }) => toast.error(data));
     }
 
-    user.nome.value = "";
-    user.usuario.value = "";
-    user.email.value = "";
-    user.senha.value = "";
-    user.usuario_admin.value = "";
+    // user.nome.value = "";
+    // user.usuario.value = "";
+    // user.email.value = "";
+    // user.senha.value = "";
+    // user.usuario_admin.value = "";
     
     setOnEdit(null);
     getUsers();

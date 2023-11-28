@@ -1,23 +1,33 @@
 .body {
     display: flex;
     overflow: hidden;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    /* align-items: center; */
     text-align: center;
     flex-direction: column;
+    /* background-color: green; */
+    height: 100%;
+
+}
+
+.bodyContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
 }
 
 .ContainerArea {
     display: flex;
     overflow: hidden;
-    margin-top: 20px;
     padding: 8px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 360px;
     height: 450px;
-    /* background-color: blue; */
+    /* background-color: red; */
 }
 
 .ContainerLogin {

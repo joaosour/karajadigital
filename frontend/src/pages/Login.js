@@ -5,6 +5,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { toast } from 'react-toastify'
+import Footer from "../components/Footer";
 
 export default function Login() {
 
@@ -38,39 +39,42 @@ export default function Login() {
     return (
         <div className={styles.body}>
             <NavBar />
-            <div className={styles.ContainerArea}>
-                <h3 className={styles.WelcomeText}>Bem vindo, colaborador!</h3>
-                <h5 className={styles.InformationText}>Informe suas credenciais abaixo para acessar o painel administrativo</h5>
-                <div className={styles.ContainerLogin}>
-                    <h4>Usuário</h4>
-                    <div className={styles.ContainerInput}>
-                        <FaUser className={styles.inputIcon} />
-                        <input
-                            className={styles.InputLogin}
-                            type="text" name="usuario"
-                            placeholder="Insira seu usuário"
-                            value={usuario}
-                            onChange={(e) => setUsuario(e.target.value)}
-                        />
-                    </div>
-                    <h4>Senha</h4>
-                    <div className={styles.ContainerInput}>
-                        <FaLock className={styles.inputIcon} />
-                        <input
-                            className={styles.InputLogin}
-                            style={{ textTransform: "none" }}
-                            type="password"
-                            name="senha"
-                            placeholder="Insira sua senha"
-                            value={senha}
-                            onChange={(e) => setSenha(e.target.value)}
-                        />
-                    </div>
+            <div className={styles.bodyContainer}>
+                <div className={styles.ContainerArea}>
+                    <h3 className={styles.WelcomeText}>Bem vindo, colaborador!</h3>
+                    <h5 className={styles.InformationText}>Informe suas credenciais abaixo para acessar o painel administrativo</h5>
+                    <div className={styles.ContainerLogin}>
+                        <h4>Usuário</h4>
+                        <div className={styles.ContainerInput}>
+                            <FaUser className={styles.inputIcon} />
+                            <input
+                                className={styles.InputLogin}
+                                type="text" name="usuario"
+                                placeholder="Insira seu usuário"
+                                value={usuario}
+                                onChange={(e) => setUsuario(e.target.value)}
+                            />
+                        </div>
+                        <h4>Senha</h4>
+                        <div className={styles.ContainerInput}>
+                            <FaLock className={styles.inputIcon} />
+                            <input
+                                className={styles.InputLogin}
+                                style={{ textTransform: "none" }}
+                                type="password"
+                                name="senha"
+                                placeholder="Insira sua senha"
+                                value={senha}
+                                onChange={(e) => setSenha(e.target.value)}
+                            />
+                        </div>
                         <button className={styles.ButtonLogin} onClick={handleLogin}>
                             <h3>ENTRAR</h3>
                         </button>
+                    </div>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }

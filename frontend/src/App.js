@@ -28,7 +28,7 @@ function App() {
           <Route path='/login' element={<Login />}/>
           <Route path='*' element={<Navigate to='/home'/>} />
         </Routes>
-        <ToastContainer autoClose={3000} position={toast.POSITION.TOP_LEFT} />
+        <ToastContainer autoClose={3000} position={toast.POSITION.TOP_RIGHT} />
       </BrowserRouter>
     </div>
   );
