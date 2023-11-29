@@ -1,6 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `karajadigital` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `karajadigital`;
--- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
 --
 -- Host: localhost    Database: karajadigital
 -- ------------------------------------------------------
@@ -42,6 +42,38 @@ LOCK TABLES `info_site` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `livro`
+--
+
+DROP TABLE IF EXISTS `livro`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `livro` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `codlivro` varchar(45) NOT NULL,
+  `autorsobrenome` varchar(245) NOT NULL,
+  `autornome` varchar(245) NOT NULL,
+  `anopublicacao` varchar(45) NOT NULL,
+  `titulo` varchar(245) NOT NULL,
+  `complemento` varchar(245) NOT NULL,
+  `tipodepublicacao` varchar(45) NOT NULL,
+  `areadoconhecimento` varchar(245) NOT NULL,
+  `autornaoiny` varchar(245) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `livro`
+--
+
+LOCK TABLES `livro` WRITE;
+/*!40000 ALTER TABLE `livro` DISABLE KEYS */;
+INSERT INTO `livro` VALUES (1,'AYTAI, D_1978_mkha','AYTAI','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(2,'AYTAI, D_1978_mkha','AYTAI224','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny');
+/*!40000 ALTER TABLE `livro` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `usuario`
 --
 
@@ -56,7 +88,7 @@ CREATE TABLE `usuario` (
   `email` varchar(245) NOT NULL,
   `usuario_admin` tinyint NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -65,7 +97,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAa','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOV','russo~~cmt','joaovictorsousa45@gmail.com',1),(25,'Tested','TESTEES','1','tetes@gs.com',1),(28,'Tested','TESTEESSSF','1','tetes@gs.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1);
+INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -78,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-28 18:05:29
+-- Dump completed on 2023-11-29  0:35:34
