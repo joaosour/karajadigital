@@ -1,7 +1,4 @@
-// Importe a biblioteca de estilos
 import styles from './Form.module.css';
-
-// ... (restante do código)
 
 import axios from "axios";
 import React, { useEffect, useRef } from "react";
@@ -9,8 +6,6 @@ import { toast } from "react-toastify";
 
 const Form = ({ getUsers, onEdit, setOnEdit }) => {
     const ref = useRef();
-
-    // ... (restante do código)
 
     useEffect(() => {
         if (onEdit) {

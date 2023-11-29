@@ -9,9 +9,11 @@ import AcervoFotografico from './pages/AcervoFotografico';
 import styles from './styles/global.module.css';
 import AreaDoColaborador from './pages/AreaDoColaborador';
 import { toast, ToastContainer } from 'react-toastify'
+import LoginFormModal from './pages/LoginFormModal';
+import Testes from './pages/Testes';
  
 function App() {
-  const [authData, setAuthData] = useState({ usuario:"JV", senha:"1" });
+  const [authData, setAuthData] = useState({ usuario:"JV", senha:"JV" });
 
   return (
     <div className={styles.body}>
@@ -22,10 +24,11 @@ function App() {
           </Route>
           <Route path='/home'  element={<Home />} />
           <Route path='/home'  element={<Home />} />
-          <Route path='/login' element={<Login setAuthData={setAuthData} />}/>
+          <Route path='/login' element={<Login /*setAuthData={setAuthData}*/ />}/>
           <Route path='/lista-bibliografica' element={<ListaBibliografica />}/>
           <Route path='/area-do-colaborador' element={<AreaDoColaborador />}/>
           <Route path='/login' element={<Login />}/>
+          <Route path='/testes' element={<Testes />}/>
           <Route path='*' element={<Navigate to='/home'/>} />
         </Routes>
         <ToastContainer autoClose={3000} position={toast.POSITION.TOP_RIGHT} />

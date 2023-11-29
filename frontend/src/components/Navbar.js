@@ -6,6 +6,7 @@ export default function NavBar() {
 
   return (
     <div className={styles.Background}>
+    <div className={styles.BackgroundNavbar}>
       <a href='/home'>
         <img className={styles.Logo} src={logo} href='/home' alt="Karaja Digital Logo" />
       </a>
@@ -17,6 +18,7 @@ export default function NavBar() {
       <button-admin>
         <a className={styles.TextAdmin} href="/login">Área do colaborador</a>
       </button-admin>
+    </div>
     </div>
   );
 }

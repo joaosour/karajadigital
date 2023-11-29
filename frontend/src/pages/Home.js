@@ -2,11 +2,23 @@ import NavBar from "../components/Navbar";
 import bannerHome from '../assets/indigenas karajas 1.jpg'
 import styles from '../styles/Home.module.css'
 import Footer from './../components/Footer.js'
+import React, { useState } from 'react';
+import LoginFormModal from './LoginFormModal'; 
 
 
 export default function Home() {
+
+
+
+    const [isModalOpen, setModalOpen] = useState(false);
+
+    const openModal = () => setModalOpen(true);
+    const closeModal = () => setModalOpen(false);
+
+
+
     return (
-        <div className={styles.body}>
+        <div>
             <NavBar />
 
             <div className={styles.ContainerBanner}>
@@ -24,6 +36,17 @@ export default function Home() {
             </div>
 
             <Footer />
+
+
+
+
+            <div>
+      <button onClick={openModal}>Abrir Modal</button>
+      <LoginFormModal isOpen={isModalOpen} onRequestClose={closeModal} />
+    </div>
+
+
+
 
         </div>
     )

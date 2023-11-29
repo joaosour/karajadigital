@@ -37,7 +37,7 @@ export default function Login() {
     };
 
     return (
-        <div className={styles.body}>
+        <div >
             <NavBar />
             <div className={styles.bodyContainer}>
                 <div className={styles.ContainerArea}>
@@ -68,7 +68,8 @@ export default function Login() {
                                 onChange={(e) => setSenha(e.target.value)}
                             />
                         </div>
-                        <button className={styles.ButtonLogin} onClick={handleLogin}>
+                        {/* <button className={styles.ButtonLogin} onClick={handleLogin}> */}
+                        <button className={styles.ButtonLogin} onClick={() => navigate("/area-do-colaborador")}>
                             <h3>ENTRAR</h3>
                         </button>
                     </div>
