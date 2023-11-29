@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import Footer from './../components/Footer.js'
 import React, { useState } from 'react';
 import LoginFormModal from './LoginFormModal'; 
+import Formulario from "../components/Formulario.js";
 
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
             </div>
 
             <Footer />
+            <Formulario/>
 
         </div>
     )
