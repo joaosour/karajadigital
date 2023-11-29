@@ -8,17 +8,8 @@ import LoginFormModal from './LoginFormModal';
 
 export default function Home() {
 
-
-
-    const [isModalOpen, setModalOpen] = useState(false);
-
-    const openModal = () => setModalOpen(true);
-    const closeModal = () => setModalOpen(false);
-
-
-
     return (
-        <div>
+        <div className={styles.body}>
             <NavBar />
 
             <div className={styles.ContainerBanner}>
@@ -36,17 +27,6 @@ export default function Home() {
             </div>
 
             <Footer />
-
-
-
-
-            <div>
-      <button onClick={openModal}>Abrir Modal</button>
-      <LoginFormModal isOpen={isModalOpen} onRequestClose={closeModal} />
-    </div>
-
-
-
 
         </div>
     )

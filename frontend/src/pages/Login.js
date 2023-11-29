@@ -37,7 +37,7 @@ export default function Login() {
     };
 
     return (
-        <div >
+        <div className={styles.body}>
             <NavBar />
             <div className={styles.bodyContainer}>
                 <div className={styles.ContainerArea}>

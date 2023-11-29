@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios from "axios";
+import RegisterBar from "../components/RegisterBar.js";
 
 export default function AreaDoColaborador() {
 
@@ -28,7 +29,7 @@ export default function AreaDoColaborador() {
     return (
         <div>
             <NavBar />
-            <h3>Área do Colaborador</h3>
+            <RegisterBar />
             <Form onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
             <Grid users={users} setUsers={setUsers} setOnEdit={setOnEdit}/>
             <Footer />

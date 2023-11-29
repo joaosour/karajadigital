@@ -2,8 +2,6 @@
     display: flex;
     overflow: hidden;
     justify-content: space-between;
-    /* align-items: center; */
-    text-align: center;
     flex-direction: column;
     /* background-color: green; */
     height: 100%;

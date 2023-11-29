@@ -1,6 +1,6 @@
 CREATE DATABASE  IF NOT EXISTS `karajadigital` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
 USE `karajadigital`;
--- MySQL dump 10.13  Distrib 8.0.33, for Win64 (x86_64)
+-- MySQL dump 10.13  Distrib 8.0.34, for Win64 (x86_64)
 --
 -- Host: localhost    Database: karajadigital
 -- ------------------------------------------------------
@@ -88,7 +88,7 @@ CREATE TABLE `usuario` (
   `email` varchar(245) NOT NULL,
   `usuario_admin` tinyint NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=36 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=49 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +97,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcom',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0);
+INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcoms',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0),(36,'JOAOa','JOAOO','1234','jjas@gamcoms',1),(37,'JOAO','JOAOA','1234','jjas@gamcoms',1),(38,'JOAO','JV3','1234','jjas@gamcoms',1),(39,'JOAO','JV4','1234','jjas@gamcoms',1),(40,'JOAO','JV5','1234','jjas@gamcoms',1),(45,'JOAO','JV6','1234','jjas@gamcoms',1),(47,'JOAO','JV7','1234','jjas@gamcoms',1);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-29  0:35:34
+-- Dump completed on 2023-11-29 18:00:49

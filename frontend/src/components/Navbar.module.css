@@ -9,7 +9,7 @@
     position: sticky;
     top: 0;
     z-index: 3;
-    box-shadow: 0px 15px 30px 10px white;
+    box-shadow: 0px 5px 15px 10px white;
 }
 
 .BackgroundNavbar {
@@ -43,6 +43,23 @@
     text-wrap: nowrap;
     text-decoration: none;
     font-size: clamp(1em, 10px, 12px);
+    /* background-color: red; */
+    border-bottom: 4px solid #020402;
+    transition: border-bottom 0.3s ease;
+}
+
+.LinksText:hover {
+    font-size: 15px;
+    color: white;
+    margin-right: 20px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-decoration: none;
+    font-size: clamp(1em, 10px, 12px);
+    /* background-color: red; */
+    border-bottom: 4px solid #FFBF00;
+    transition: border-bottom 0.3s ease;
 }
 
 .FontOffFocus {
@@ -59,6 +76,7 @@
 
 button-admin {
     display: flex;
+    color: white;
     background-color: #171717;
     width: 140px;
     height: 100%;
@@ -68,6 +86,7 @@ button-admin {
     text-align: center;
     overflow: hidden;
     padding: 5px 5px;
+    transition: background-color 0.2s ease;
 }
 
 button-admin:hover {
@@ -80,12 +99,23 @@ button-admin:hover {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    transition: background-color 0.35s ease;
+    transition: background-color 0.2s ease;
     padding: 5px 5px;
 }
 
 .TextAdmin {
     color: white;
+    font-weight: 500;
+    font-size: clamp(1em, 5px, 17px);
+    border-radius: 12px;
+    text-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.TextAdmin:hover {
+    color: #4d3900;
     font-weight: 500;
     font-size: clamp(1em, 5px, 17px);
     border-radius: 12px;

@@ -34,29 +34,42 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
         return toast.warn("Preencha todos os campos!");
     }
 
-    if(onEdit) {
+    if (onEdit) {
         await axios
-        .put("http://localhost:8801/users/" + onEdit.id, {
+          .put("http://localhost:8801/users/" + onEdit.id, {
             nome: user.nome.value,
             usuario: user.usuario.value,
             email: user.email.value,
             senha: user.senha.value,
             usuario_admin: user.usuario_admin.value,
-        })
-        .then(({ data }) => toast.success(data))
-        .catch(({ data }) => toast.error(data));
-    }else{
+          })
+          .then(({ data }) => toast.success(data))
+          .catch((error) => {
+            if (error.response.status === 409) {
+              toast.error(error.response.data);
+            } else {
+              console.error(error);
+            }
+          });
+      } else {
         await axios
-        .post("http://localhost:8801/users/", {
+          .post("http://localhost:8801/users/", {
             nome: user.nome.value,
             usuario: user.usuario.value,
             email: user.email.value,
             senha: user.senha.value,
             usuario_admin: user.usuario_admin.value,
-        })
-        .then(({ data }) => toast.success(data))
-        .catch(({ data }) => toast.error(data));
-    }
+          })
+          .then(({ data }) => toast.success(data))
+          .catch((error) => {
+            if (error.response.status === 409) {
+              toast.error(error.response.data);
+            } else {
+              console.error(error);
+            }
+          });
+      }
+      
 
     // user.nome.value = "";
     // user.usuario.value = "";
