@@ -22,8 +22,8 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route element={<PrivateRoutes authData={authData} setAuthData={setAuthData} />}>
-            <Route path='/acervo-fotografico' element={<AcervoFotografico />}/>
           </Route>
+          <Route path='/acervo-fotografico' element={<AcervoFotografico />}/>
           <Route path='/home'  element={<Home />} />
           <Route path='/home'  element={<Home />} />
           <Route path='/login' element={<Login /*setAuthData={setAuthData}*/ />}/>

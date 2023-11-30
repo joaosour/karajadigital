@@ -3,6 +3,7 @@ import styles from "../styles/ListaBibliografica.module.css"
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { SiAdobeacrobatreader } from "react-icons/si";
+import Footer from "../components/Footer";
 
 export default function ListaBibliografica() {
 
@@ -41,6 +42,7 @@ export default function ListaBibliografica() {
                     </div>
                 ))}
             </div>
+            <Footer />
 
         </>
     )

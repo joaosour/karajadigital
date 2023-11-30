@@ -22,6 +22,7 @@
     border: 1px solid #bbb;
     border-radius: 5px;
     height: 40px;
+    text-transform: capitalize;
 }
 
 .button {
@@ -32,6 +33,7 @@
     background-color: #076633;
     color: white;
     height: 42px;
+    transition: background-color 0.2s ease;
 }
 
 .button:hover {
@@ -42,6 +44,7 @@
     background-color: #FFBF00;
     color: white;
     height: 42px;
+    transition: background-color 0.2s ease;
 }
 
 .label {

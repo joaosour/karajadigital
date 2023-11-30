@@ -87,15 +87,15 @@ const FormBooks = ({ getBooks, onEdit, setOnEdit }) => {
       }
       
 
-    // book.codlivro.value = "";
-    // book.autorsobrenome.value = "";
-    // book.autornome.value = "";
-    // book.anopublicacao.value = "";
-    // book.titulo.value = "";
-    // book.complemento.value = "";
-    // book.tipodepublicacao.value = "";
-    // book.areadoconhecimento.value = "";
-    // book.autornaoiny.value = "";
+    book.codlivro.value = "";
+    book.autorsobrenome.value = "";
+    book.autornome.value = "";
+    book.anopublicacao.value = "";
+    book.titulo.value = "";
+    book.complemento.value = "";
+    book.tipodepublicacao.value = "";
+    book.areadoconhecimento.value = "";
+    book.autornaoiny.value = "";
     
     setOnEdit(null);
     getBooks();
@@ -103,40 +103,40 @@ const FormBooks = ({ getBooks, onEdit, setOnEdit }) => {
 
     return (
         <form className={styles.formContainer} ref={ref} onSubmit={handleSubmit}>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="codlivro">codlivro</label>
+            <div className={styles.inputArea} style={{width: '10%', flex: 1}}>
+                <label className={styles.label} htmlFor="codlivro">Cód. Livro</label>
                 <input className={styles.input} name="codlivro" id="codlivro"/>
             </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="autorsobrenome">autorsobrenome</label>
-                <input className={styles.input} name="autorsobrenome" id="autorsobrenome"/>
-            </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="autornome">autornome</label>
-                <input className={styles.input} name="autornome" id="autornome"/>
-            </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="anopublicacao">anopublicacao</label>
-                <input className={styles.input} name="anopublicacao" id="anopublicacao"/>
-            </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="titulo">titulo</label>
-                <input className={styles.input} name="titulo" id="titulo"/>
-            </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="complemento">complemento</label>
-                <input className={styles.input} name="complemento" id="complemento"/>
-            </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="tipodepublicacao">tipodepublicacao</label>
+            <div className={styles.inputArea} style={{width: '17%'}}>
+                <label className={styles.label} htmlFor="tipodepublicacao">Tipo de publicação</label>
                 <input className={styles.input} name="tipodepublicacao" id="tipodepublicacao"/>
             </div>
-            <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="areadoconhecimento">areadoconhecimento</label>
+            <div className={styles.inputArea} style={{width: '15%'}}>
+                <label className={styles.label} htmlFor="autorsobrenome">Sobrenome autor</label>
+                <input className={styles.input} name="autorsobrenome" id="autorsobrenome"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '20%'}}>
+                <label className={styles.label} htmlFor="autornome">Nome autor</label>
+                <input className={styles.input} name="autornome" id="autornome"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '17%'}}>
+                <label className={styles.label} htmlFor="anopublicacao">Ano de publicação</label>
+                <input className={styles.input} name="anopublicacao" id="anopublicacao"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '100%', wordWrap: 'break-word'}}>
+                <label className={styles.label} htmlFor="titulo">Título</label>
+                <input className={styles.input} name="titulo" id="titulo"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '11%', flex: 1}}>
+                <label className={styles.label} htmlFor="complemento">Complemento</label>
+                <input className={styles.input} name="complemento" id="complemento"/>
+            </div>
+            <div className={styles.inputArea} style={{width: '19%'}}>
+                <label className={styles.label} htmlFor="areadoconhecimento">Área do conhecimento</label>
                 <input className={styles.input} name="areadoconhecimento" id="areadoconhecimento"/>
             </div>
             <div className={styles.inputArea} style={{width: '11%'}}>
-                <label className={styles.label} htmlFor="autornaoiny">autornaoiny</label>
+                <label className={styles.label} htmlFor="autornaoiny">Origem do autor</label>
                 <input className={styles.input} name="autornaoiny" id="autornaoiny"/>
             </div>
 

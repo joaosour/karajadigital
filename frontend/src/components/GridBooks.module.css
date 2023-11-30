@@ -91,23 +91,28 @@
 }
 
 .width-A {
+  /* width: 20%; */
   width: 20%;
 }
 
 .width-B {
+  /* width: 10%; */
   width: 10%;
 }
 
 .width-C {
+  /* width: 20%; */
   width: 20%;
 }
 
 .width-D {
+  /* width: 15%; */
   width: 15%;
 }
 
 .width-E {
-  width: 10%;
+  /* width: 10%; */
+  width: 55%;
 }
 
 .width-F {

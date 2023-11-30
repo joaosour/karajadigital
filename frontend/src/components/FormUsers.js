@@ -88,15 +88,15 @@ const FormUsers = ({ getUsers, onEdit, setOnEdit }) => {
             </div>
             <div className={styles.inputArea} style={{width: '15%'}}>
                 <label className={styles.label} htmlFor="usuario">Usuário</label>
-                <input className={styles.input} name="usuario" id="usuario" />
+                <input className={styles.input} style={{textTransform: 'uppercase'}} name="usuario" id="usuario" />
             </div>
             <div className={styles.inputArea} style={{width: '25%'}}>
                 <label className={styles.label} htmlFor="email">E-mail</label>
-                <input className={styles.input} name="email" type="email" id="email" />
+                <input className={styles.input} style={{textTransform: 'none'}} name="email" type="email" id="email" />
             </div>
             <div className={styles.inputArea} style={{width: '20%'}}>
                 <label className={styles.label} htmlFor="senha">Senha</label>
-                <input className={styles.input} name="senha" id="senha"/>
+                <input className={styles.input} style={{textTransform: 'none'}} name="senha" id="senha"/>
             </div>
             <div className={styles.inputArea} style={{width: '15%'}}>
                 <label className={styles.label} htmlFor="usuario_admin">Admin</label>

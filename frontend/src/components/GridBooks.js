@@ -30,15 +30,15 @@ const GridBooks = ({ books, setBooks, setOnEdit }) => {
         <div className={styles.table}>
             <div className={styles.thread}>
                 <div className={`${styles.tr} ${styles.trHeader}`}>
-                    <div className={`${styles.th} ${styles['width-A']}`}>codlivro</div>
-                    <div className={`${styles.th} ${styles['width-B']}`}>autorsobrenome</div>
-                    <div className={`${styles.th} ${styles['width-C']}`}>autornome</div>
-                    <div className={`${styles.th} ${styles['width-D']}`}>anopublicacao</div>
-                    <div className={`${styles.th} ${styles['width-E']}`}>titulo</div>
-                    <div className={`${styles.th} ${styles['width-F']}`}>complemento</div>
+                    {/* <div className={`${styles.th} ${styles['width-A']}`}>Cód. Livro</div> */}
+                    <div className={`${styles.th} ${styles['width-E']}`}>Título</div>
+                    <div className={`${styles.th} ${styles['width-B']}`}>Autor sobrenome</div>
+                    <div className={`${styles.th} ${styles['width-C']}`}>Autor nome</div>
+                    <div className={`${styles.th} ${styles['width-D']}`}>Ano de publicação</div>
+                    {/* <div className={`${styles.th} ${styles['width-F']}`}>complemento</div>
                     <div className={`${styles.th} ${styles['width-F']}`}>tipodepublicacao</div>
                     <div className={`${styles.th} ${styles['width-F']}`}>areadoconhecimento</div>
-                    <div className={`${styles.th} ${styles['width-F']}`}>autornaoiny</div>
+                    <div className={`${styles.th} ${styles['width-F']}`}>autornaoiny</div> */}
                     <div className={`${styles.th} ${styles['width-Z']}`}></div>
                     <div className={`${styles.th} ${styles['width-Z']}`}></div>
                 </div>
@@ -46,15 +46,15 @@ const GridBooks = ({ books, setBooks, setOnEdit }) => {
             <div className={styles.tbody}>
                 {books.map((item, i) => (
                     <div key={i} className={styles.tr}>
-                        <div className={`${styles.td} ${styles['width-A']}`}>{item.codlivro}</div>
+                        {/* <div className={`${styles.td} ${styles['width-A']}`}>{item.codlivro}</div> */}
+                        <div className={`${styles.td} ${styles['width-E']}`}>{item.titulo}</div>
                         <div className={`${styles.td} ${styles['width-B']}`}>{item.autorsobrenome}</div>
                         <div className={`${styles.td} ${styles['width-C']}`}>{item.autornome}</div>
                         <div className={`${styles.td} ${styles['width-D']}`}>{item.anopublicacao}</div>
-                        <div className={`${styles.td} ${styles['width-E']}`}>{item.titulo}</div>
-                        <div className={`${styles.td} ${styles['width-F']}`}>{item.complemento}</div>
+                        {/* <div className={`${styles.td} ${styles['width-F']}`}>{item.complemento}</div>
                         <div className={`${styles.td} ${styles['width-F']}`}>{item.tipodepublicacao}</div>
                         <div className={`${styles.td} ${styles['width-F']}`}>{item.areadoconhecimento}</div>
-                        <div className={`${styles.td} ${styles['width-F']}`}>{item.autornaoiny}</div>
+                        <div className={`${styles.td} ${styles['width-F']}`}>{item.autornaoiny}</div> */}
                         
                         <div className={`${styles.td} ${styles['width-Z']}`}>
                             <FaEdit onClick={() => handleEdit(item)} />

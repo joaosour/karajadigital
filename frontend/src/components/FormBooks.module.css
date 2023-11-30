@@ -1,19 +1,24 @@
 .formContainer {
     display: flex;
+    width: 100%;
     align-items: flex-end;
+    justify-content: space-between;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     background-color: #fff;
-    gap: 20px;
+    column-gap: 20px;
+    row-gap: 5px;
     padding: 20px;
     box-shadow: 0px 0px 5px #ccc;
     border-radius: 5px;
+    
 }
 
 .inputArea {
     display: flex;
     flex-direction: column;
     width: 100%;
+    /* background-color: green; */
 }
 
 .input {
@@ -21,7 +26,11 @@
     padding: 0 10px;
     border: 1px solid #bbb;
     border-radius: 5px;
-    height: 40px;
+    height: 100%;
+    min-height: 40px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-transform: capitalize;
 }
 
 .button {
@@ -46,5 +55,8 @@
 
 .label {
     width: 100%;
+    font-weight: 500;
+    word-wrap: break-word;
+    text-wrap: nowrap;
     /* Se necessário, adicione estilos para labels aqui */
 }

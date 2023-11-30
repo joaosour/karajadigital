@@ -31,12 +31,16 @@ export default function CadastrarUsuario() {
         <div className={styles.body}>
             <NavBar />
             <RegisterBar />
+            <h3 style={{marginBottom: '20px', textAlign: 'end'}}>Cadastrar usuário</h3>
+
 
             {/* <div className={styles.containerArea}>
               <h3>Bem vindo, colaborador!</h3>
               <h5>Este é o espaço destinado a manutenção dos dados cadastrados no site. Utilize a barra de navegação acima para acessar as opções de cadastro disponíveis.</h5>
             </div> */}
             <FormUsers onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
+            <h3 style={{marginTop: '20px', textAlign: 'end'}}>Usuários cadastrados</h3>
+
             <GridUsers users={users} setUsers={setUsers} setOnEdit={setOnEdit}/>
             <Footer />
         </div>
