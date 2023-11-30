@@ -9,7 +9,7 @@ export default function RegisterBar() {
     return (
         <div className={styles.Background}>
             <div className={styles.BackgroundNavbar}>
-                <h3 style={{color: "white", fontWeight: "500"}}>Área de cadastros do colaborador</h3>
+                <h3 style={{color: "white", fontWeight: "500", cursor: "pointer"}} onClick={() => navigate("/area-do-colaborador")}>Área de cadastros do colaborador</h3>
                 <div className={styles.CircleArrow}>
                 <IoIosArrowForward />
 

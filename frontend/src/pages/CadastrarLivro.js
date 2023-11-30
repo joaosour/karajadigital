@@ -8,8 +8,22 @@ import { toast } from "react-toastify";
 import axios from "axios";
 import RegisterBar from "../components/RegisterBar.js";
 import styles from './../styles/CadastrarLivro.module.css'
+import FormModal from "../components/FormModal.js";
 
 export default function CadastrarLivro() {
+
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
+
 
     const [books, setBooks] = useState([]);
     const [onEdit, setOnEdit] = useState(null);
@@ -32,11 +46,10 @@ export default function CadastrarLivro() {
             <NavBar />
             <RegisterBar />
 
-            {/* <div className={styles.containerArea}>
-              <h3>Bem vindo, colaborador!</h3>
-              <h5>Este é o espaço destinado a manutenção dos dados cadastrados no site. Utilize a barra de navegação acima para acessar as opções de cadastro disponíveis.</h5>
-            </div> */}
-            <FormBooks onEdit={onEdit} setOnEdit={setOnEdit} getBooks={getBooks} />
+            <button onClick={handleOpenModal}>Abrir Modal</button>
+            <FormModal isOpen={isModalOpen} onClose={handleCloseModal} />
+
+            {/* <FormBooks onEdit={onEdit} setOnEdit={setOnEdit} getBooks={getBooks} /> */}
             <GridBooks books={books} setBooks={setBooks} setOnEdit={setOnEdit}/>
             <Footer />
         </div>

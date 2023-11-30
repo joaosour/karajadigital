@@ -60,7 +60,7 @@ CREATE TABLE `livro` (
   `areadoconhecimento` varchar(245) NOT NULL,
   `autornaoiny` varchar(245) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +69,7 @@ CREATE TABLE `livro` (
 
 LOCK TABLES `livro` WRITE;
 /*!40000 ALTER TABLE `livro` DISABLE KEYS */;
-INSERT INTO `livro` VALUES (1,'AAAYTAI, D_1978_mkha','AYTAI','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(8,'AYTAI, D_1979_laibk','AYTAI','Desidério','1979','A linguagem de assobio dos índios Bororo e Karajá.','Publicações do Museu Municipal de Paulínia, n. 7. pp. 1-23.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(9,'ARAUJO, G_2016_qpfb','ARAÚJO','Gustavo O.','2016','Com quantos paus se faz uma boneca? – “entalhes” de uma etnografia da boneca de madeira karajá.','Dissertação de mestrado, PPGAS-FCS/UFG.','Dissertação de mestrado','Antropologia','Autoria não iny'),(10,'ALMEIDA, N_2010_ce','ALMEIDA','Natália Rita de','2010','“Da catequização para a educação”: uma análise da educação através da criação da Escola Estadual Indígena Maurehi (1990-2010).','Monografia de Graduação. UEG (Unidade Universitária Cora Coralina, Goiás, GO).','Monografia de graduação','História','Autoria não iny'),(11,'BONILLA, O_2000_rmb','BONILLA','Oiara','2000','Reproduzindo-se no mundo dos brancos: Estruturas KARAJÁ em Porto Txuiri (Ilha do Bananal – Tocantins).','Dissertação de mestrado, PPGAS-Museu Nacional/UFRJ. 102 pp.','Dissertação de mestrado','Antropologia','Autoria não iny'),(12,'BALDUS, H_1937_mkt','BALDUS','Herbet','1937','Mitologia Karajá e Tereno.','Em: Ensaios de Etnologia Brasileira. São Paulo; Rio de Janeiro; Recife: Companhia Editora Nacional. pp. 187-275.','Capítulo de Livro','Antropologia','Autoria não iny'),(13,'CASTRO FARIA, L_1979_fhaik','CASTRO FARIA','LUIS','1979','La figura humana em el arte de los indios karajá.','Revista de Cultura Brasileña, nº 48.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny');
+INSERT INTO `livro` VALUES (1,'AAAYTAI, D_1978_mkha','AYTAI','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(8,'AYTAI, D_1979_laibk','AYTAI','Desidério','1979','A linguagem de assobio dos índios Bororo e Karajá.','Publicações do Museu Municipal de Paulínia, n. 7. pp. 1-23.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(9,'ARAUJO, G_2016_qpfb','ARAÚJO','Gustavo O.','2016','Com quantos paus se faz uma boneca? – “entalhes” de uma etnografia da boneca de madeira karajá.','Dissertação de mestrado, PPGAS-FCS/UFG.','Dissertação de mestrado','Antropologia','Autoria não iny'),(10,'ALMEIDA, N_2010_ce','ALMEIDA','Natália Rita de','2010','“Da catequização para a educação”: uma análise da educação através da criação da Escola Estadual Indígena Maurehi (1990-2010).','Monografia de Graduação. UEG (Unidade Universitária Cora Coralina, Goiás, GO).','Monografia de graduação','História','Autoria não iny'),(11,'BONILLA, O_2000_rmb','BONILLA','Oiara','2000','Reproduzindo-se no mundo dos brancos: Estruturas KARAJÁ em Porto Txuiri (Ilha do Bananal – Tocantins).','Dissertação de mestrado, PPGAS-Museu Nacional/UFRJ. 102 pp.','Dissertação de mestrado','Antropologia','Autoria não iny'),(12,'BALDUS, H_1937_mkt','BALDUS','Herbet','1937','Mitologia Karajá e Tereno.','Em: Ensaios de Etnologia Brasileira. São Paulo; Rio de Janeiro; Recife: Companhia Editora Nacional. pp. 187-275.','Capítulo de Livro','Antropologia','Autoria não iny'),(13,'CASTRO FARIA, L_1979_fhaik','CASTRO FARIA','LUIS','1979','La figura humana em el arte de los indios karajá.','Revista de Cultura Brasileña, nº 48.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(15,'j','j','j','j','j','j','j','j','j'),(17,'u','u','u','u','u','u','u','u','u'),(18,'n','n','n','n','n','n','n','n','n'),(19,'i','i','i','i','i','i','i','i','i');
 /*!40000 ALTER TABLE `livro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-30 11:34:18
+-- Dump completed on 2023-11-30 15:13:24

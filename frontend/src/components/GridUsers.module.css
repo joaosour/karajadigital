@@ -28,24 +28,23 @@
 .tr {
   display: flex;
   padding: 12px 5px;
-  border-left: 4px solid #fff;
   width: 100%;
   margin-bottom: 8px;
   overflow: hidden;
   text-overflow: ellipsis;
   text-wrap: nowrap;
   border-radius: 4px;
-  background-color: #ffffff;
   align-items: center;
   justify-content: center;
   position: relative;
+  border-left: 4px solid #fff;
+  background-color: #ffffff;
   transition: box-shadow 0.7s ease, border-left 0.2s ease;
   z-index: 1;
 }
 
 .tr:hover {
   display: flex;
-  border-left: 4px solid #076633;
   padding: 12px 5px;
   width: 100%;
   margin-bottom: 8px;
@@ -53,9 +52,10 @@
   text-overflow: ellipsis;
   text-wrap: nowrap;
   border-radius: 4px;
-  background-color: #fcfcfc;
   align-items: center;
   justify-content: center;
+  border-left: 4px solid #076633;
+  background-color: #fcfcfc;
   box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.09);
   transition: box-shadow 0.3s ease, border-left 0.2s ease;
   z-index: 2;
