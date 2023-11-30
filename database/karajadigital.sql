@@ -60,7 +60,7 @@ CREATE TABLE `livro` (
   `areadoconhecimento` varchar(245) NOT NULL,
   `autornaoiny` varchar(245) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=26 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -69,7 +69,7 @@ CREATE TABLE `livro` (
 
 LOCK TABLES `livro` WRITE;
 /*!40000 ALTER TABLE `livro` DISABLE KEYS */;
-INSERT INTO `livro` VALUES (1,'AAAYTAI, D_1978_mkha','AYTAI','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(8,'AYTAI, D_1979_laibk','AYTAI','Desidério','1979','A linguagem de assobio dos índios Bororo e Karajá.','Publicações do Museu Municipal de Paulínia, n. 7. pp. 1-23.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(9,'ARAUJO, G_2016_qpfb','ARAÚJO','Gustavo O.','2016','Com quantos paus se faz uma boneca? – “entalhes” de uma etnografia da boneca de madeira karajá.','Dissertação de mestrado, PPGAS-FCS/UFG.','Dissertação de mestrado','Antropologia','Autoria não iny'),(10,'ALMEIDA, N_2010_ce','ALMEIDA','Natália Rita de','2010','“Da catequização para a educação”: uma análise da educação através da criação da Escola Estadual Indígena Maurehi (1990-2010).','Monografia de Graduação. UEG (Unidade Universitária Cora Coralina, Goiás, GO).','Monografia de graduação','História','Autoria não iny'),(11,'BONILLA, O_2000_rmb','BONILLA','Oiara','2000','Reproduzindo-se no mundo dos brancos: Estruturas KARAJÁ em Porto Txuiri (Ilha do Bananal – Tocantins).','Dissertação de mestrado, PPGAS-Museu Nacional/UFRJ. 102 pp.','Dissertação de mestrado','Antropologia','Autoria não iny'),(12,'BALDUS, H_1937_mkt','BALDUS','Herbet','1937','Mitologia Karajá e Tereno.','Em: Ensaios de Etnologia Brasileira. São Paulo; Rio de Janeiro; Recife: Companhia Editora Nacional. pp. 187-275.','Capítulo de Livro','Antropologia','Autoria não iny'),(13,'CASTRO FARIA, L_1979_fhaik','CASTRO FARIA','LUIS','1979','La figura humana em el arte de los indios karajá.','Revista de Cultura Brasileña, nº 48.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(15,'j','j','j','j','j','j','j','j','j'),(17,'u','u','u','u','u','u','u','u','u'),(18,'n','n','n','n','n','n','n','n','n'),(19,'i','i','i','i','i','i','i','i','i');
+INSERT INTO `livro` VALUES (1,'AAAYTAI, D_1978_mkha','AYTAI','Desidério','1978','Um mito karajá: a história do arco-íris.','Publicações do Museu Municipal de Paulínia, n. 5. pp. 20-21.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(8,'AYTAI, D_1979_laibk','AYTAI','Desidério','1979','A linguagem de assobio dos índios Bororo e Karajá.','Publicações do Museu Municipal de Paulínia, n. 7. pp. 1-23.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny'),(9,'ARAUJO, G_2016_qpfb','ARAÚJO','Gustavo O.','2016','Com quantos paus se faz uma boneca? – “entalhes” de uma etnografia da boneca de madeira karajá.','Dissertação de mestrado, PPGAS-FCS/UFG.','Dissertação de mestrado','Antropologia','Autoria não iny'),(10,'ALMEIDA, N_2010_ce','ALMEIDA','Natália Rita de','2010','“Da catequização para a educação”: uma análise da educação através da criação da Escola Estadual Indígena Maurehi (1990-2010).','Monografia de Graduação. UEG (Unidade Universitária Cora Coralina, Goiás, GO).','Monografia de graduação','História','Autoria não iny'),(11,'BONILLA, O_2000_rmb','BONILLA','Oiara','2000','Reproduzindo-se no mundo dos brancos: Estruturas KARAJÁ em Porto Txuiri (Ilha do Bananal – Tocantins).','Dissertação de mestrado, PPGAS-Museu Nacional/UFRJ. 102 pp.','Dissertação de mestrado','Antropologia','Autoria não iny'),(12,'BALDUS, H_1937_mkt','BALDUS','Herbet','1937','Mitologia Karajá e Tereno.','Em: Ensaios de Etnologia Brasileira. São Paulo; Rio de Janeiro; Recife: Companhia Editora Nacional. pp. 187-275.','Capítulo de Livro','Antropologia','Autoria não iny'),(13,'CASTRO FARIA, L_1979_fhaik','CASTRO FARIA','LUIS','1979','La figura humana em el arte de los indios karajá.','Revista de Cultura Brasileña, nº 48.','Artigo em periódico, jornal ou revista','Antropologia','Autoria não iny');
 /*!40000 ALTER TABLE `livro` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -88,7 +88,7 @@ CREATE TABLE `usuario` (
   `email` varchar(245) NOT NULL,
   `usuario_admin` tinyint NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=62 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +97,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcoms',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0),(36,'JOAOa','JOAOO','1234','jjas@gamcoms',1),(37,'JOAO','JOAOA','1234','jjas@gamcoms',1),(38,'JOAO','JV3','1234','jjas@gamcoms',1),(39,'JOAO','JV4','1234','jjas@gamcoms',1),(40,'JOAOS','JV5','1234','jv5@gamcoms',1),(49,'Joao','JV10','123','JV10@GMAIL.COM',0),(50,'Joao','JV15','123','JV10@GMAIL.COM',0),(56,'JOAO VICTOR','JV6SS','1234','joao@gmail.com',1),(57,'JOAOSD','JV61','1234','jjas@gamcomsSD',1),(58,'JOAOS','JV6','1234','jjas@gamcoms',1),(59,'RENAN','RENAN2','1','renan@gmail.com',1);
+INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcoms',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0),(36,'JOAOa','JOAOO','1234','jjas@gamcoms',1),(37,'JOAO','JOAOA','1234','jjas@gamcoms',1),(38,'JOAO','JV3','1234','jjas@gamcoms',1),(40,'JOAOS','JV5','1234','jv5@gamcoms',1),(49,'Joao','JV10','123','JV10@GMAIL.COM',0),(50,'Joao','JV15','123','JV10@GMAIL.COM',0),(56,'JOAO VICTOR','JV6SS','1234','joao@gmail.com',1),(57,'JOAOSD','JV61','1234','jjas@gamcomsSD',1),(58,'JOAOS','JV6','1234','jjas@gamcoms',1),(59,'RENAN','RENAN2','1','renan@gmail.com',1),(60,'RENAN3','RENAN4','1','renan@gmail.com',1),(61,'aRENAN7','renan7','1','renan@gmail.com',0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-30 15:13:24
+-- Dump completed on 2023-11-30 18:14:34
