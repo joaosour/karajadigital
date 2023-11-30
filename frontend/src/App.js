@@ -11,6 +11,8 @@ import AreaDoColaborador from './pages/AreaDoColaborador';
 import { toast, ToastContainer } from 'react-toastify'
 import LoginFormModal from './pages/LoginFormModal';
 import Testes from './pages/Testes';
+import CadastrarUsuario from './pages/CadastrarUsuario';
+import CadastrarLivro from './pages/CadastrarLivro';
  
 function App() {
   const [authData, setAuthData] = useState({ usuario:"JV", senha:"JV" });
@@ -27,6 +29,8 @@ function App() {
           <Route path='/login' element={<Login /*setAuthData={setAuthData}*/ />}/>
           <Route path='/lista-bibliografica' element={<ListaBibliografica />}/>
           <Route path='/area-do-colaborador' element={<AreaDoColaborador />}/>
+          <Route path='/area-do-colaborador/cadastrar-usuario' element={<CadastrarUsuario />}/>
+          <Route path='/area-do-colaborador/cadastrar-livro' element={<CadastrarLivro />}/>
           <Route path='/login' element={<Login />}/>
           <Route path='/testes' element={<Testes />}/>
           <Route path='*' element={<Navigate to='/home'/>} />

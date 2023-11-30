@@ -1,12 +1,12 @@
 import React from "react";
 import axios from "axios";
-import styles from './Grid.module.css';
+import styles from './GridUsers.module.css';
 import { FaTrash, FaEdit } from "react-icons/fa";
 import { toast } from "react-toastify";
 
 
 
-const Grid = ({ users, setUsers, setOnEdit }) => {
+const GridUsers = ({ users, setUsers, setOnEdit }) => {
 
     const handleEdit = (item) => {
         setOnEdit(item);
@@ -63,4 +63,4 @@ const Grid = ({ users, setUsers, setOnEdit }) => {
     );
 };
 
-export default Grid;
+export default GridUsers;

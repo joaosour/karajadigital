@@ -5,6 +5,7 @@ import Footer from './../components/Footer.js'
 import React, { useState } from 'react';
 import LoginFormModal from './LoginFormModal'; 
 import Formulario from "../components/Formulario.js";
+import Testes from "./Testes.js";
 
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
     return (
         <div className={styles.body}>
             <NavBar />
+            {/* <Testes/> */}
 
             <div className={styles.ContainerBanner}>
                 <img className={styles.BannerImg} src={bannerHome} alt="Banner Karaja Digital"/>
@@ -28,7 +30,6 @@ export default function Home() {
             </div>
 
             <Footer />
-            <Formulario/>
 
         </div>
     )

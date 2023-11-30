@@ -41,7 +41,7 @@ export default function Login() {
             <NavBar />
             <div className={styles.bodyContainer}>
                 <div className={styles.ContainerArea}>
-                    <h3 className={styles.WelcomeText}>Bem vindo, colaborador!</h3>
+                    <h3 className={styles.WelcomeText}>Olá!</h3>
                     <h5 className={styles.InformationText}>Informe suas credenciais abaixo para acessar o painel administrativo</h5>
                     <div className={styles.ContainerLogin}>
                         <h4>Usuário</h4>

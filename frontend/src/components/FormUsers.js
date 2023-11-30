@@ -1,10 +1,9 @@
-import styles from './Form.module.css';
-
+import styles from './FormUsers.module.css';
 import axios from "axios";
 import React, { useEffect, useRef } from "react";
 import { toast } from "react-toastify";
 
-const Form = ({ getUsers, onEdit, setOnEdit }) => {
+const FormUsers = ({ getUsers, onEdit, setOnEdit }) => {
     const ref = useRef();
 
     useEffect(() => {
@@ -109,4 +108,4 @@ const Form = ({ getUsers, onEdit, setOnEdit }) => {
     );
 };
 
-export default Form;
+export default FormUsers;

@@ -1,15 +1,19 @@
 .FooterBackground {
+    flex: 1;
     flex-direction: column;
     margin-top: auto;
     background-color: #020402;
     width: 100%;
     min-height: 140px;
+    max-height: 140px;
     justify-content: center;
     align-items: center;
     display: flex;
     border-radius: 13px;
     padding: 8px 15px;
     overflow: hidden;
+    /* position: absolute; */
+    bottom: 0;
     
 }
 

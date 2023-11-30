@@ -55,9 +55,9 @@ export const updateUser = (req, res) => {
             return res.status(404).json("Usuário não encontrado");
         }
 
-        if (results.length > 0) {
-            return res.status(409).json("Usuário já existe!");
-        }
+        // if (results.length > 0) {
+        //     return res.status(409).json("Usuário já existe!");
+        // }
 
         else {
             const q = "UPDATE usuario SET `nome` = ?, `usuario` = ?,`senha`= ?,`email` = ?, `usuario_admin` = ? WHERE `id` = ?";
