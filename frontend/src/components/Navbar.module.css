@@ -1,6 +1,7 @@
 .Background {
     display: flex;
     background-color: white;
+    min-height: 95px;
     height: 95px;
     width: 100%;
     align-items: flex-end;

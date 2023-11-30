@@ -88,7 +88,7 @@ CREATE TABLE `usuario` (
   `email` varchar(245) NOT NULL,
   `usuario_admin` tinyint NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=60 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +97,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcoms',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0),(36,'JOAOa','JOAOO','1234','jjas@gamcoms',1),(37,'JOAO','JOAOA','1234','jjas@gamcoms',1),(38,'JOAO','JV3','1234','jjas@gamcoms',1),(39,'JOAO','JV4','1234','jjas@gamcoms',1),(40,'JOAO','JV5','1234','jjas@gamcoms',1),(49,'Joao','JV10','123','JV10@GMAIL.COM',0),(50,'Joao','JV15','123','JV10@GMAIL.COM',0),(55,'Rennan','RENAN','renan','renan@ufopa.com.br',1),(56,'JOAO VICTOR','JV6SS','1234','joao@gmail.com',1),(57,'JOAOSD','JV61','1234','jjas@gamcomsSD',1),(58,'JOAO','JV6','1234','jjas@gamcoms',1);
+INSERT INTO `usuario` VALUES (1,'Joao Victor','JV','1','joao@gmail.comv',1),(14,'MariaaAaAA','JOAO','444','joao@gmail.blog',0),(15,'JOAO','JOAO','1234','jjas@gamcoms',1),(20,'Maria','JV23','22','joao@gmail.blog',1),(22,'João Victor de Sousa Nascimento','JOAOVS','russo~~cmt','joaovictorsousa45@gmail.com',1),(31,'Maria','JV234','22','joao@gmail.blog',1),(32,'Maria','JV2341','22','joao@gmail.blog',1),(33,'Tested','TESTEESx','1','tetes@gs.com',1),(34,'João Victor de Sousa Nascimento','JOAOVSn','russo~~cmt','joaovictorsousa45@gmail.com',0),(35,'MariaaAaAA','JOAO2','444','joao@gmail.blog',0),(36,'JOAOa','JOAOO','1234','jjas@gamcoms',1),(37,'JOAO','JOAOA','1234','jjas@gamcoms',1),(38,'JOAO','JV3','1234','jjas@gamcoms',1),(39,'JOAO','JV4','1234','jjas@gamcoms',1),(40,'JOAOS','JV5','1234','jv5@gamcoms',1),(49,'Joao','JV10','123','JV10@GMAIL.COM',0),(50,'Joao','JV15','123','JV10@GMAIL.COM',0),(56,'JOAO VICTOR','JV6SS','1234','joao@gmail.com',1),(57,'JOAOSD','JV61','1234','jjas@gamcomsSD',1),(58,'JOAOS','JV6','1234','jjas@gamcoms',1),(59,'RENAN','RENAN2','1','renan@gmail.com',1);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -110,4 +110,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-11-30  1:25:56
+-- Dump completed on 2023-11-30 11:34:18
